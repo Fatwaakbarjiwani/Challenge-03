@@ -3,6 +3,8 @@ import FormTodoSearch from "../components/FormTodoSearch";
 import Judul from "../components/Judul";
 import FormTodoList from "../components/FormTodoList";
 import { Link } from "react-router-dom";
+import Edit from "../components/edit.png";
+import Delete from "../components/delete.png";
 
 export default function DataList({
   dataJson,
@@ -116,11 +118,16 @@ export default function DataList({
                     onChange={(e) => handleChecked(e, item, index)}
                   />
                   <Link to={"/FormEditTask/" + index}>
-                    <button className="m-1">edit</button>
+                    <button className=" btn btn-outline-light m-1">
+                      <img className="app-logo" src={Edit} alt="Edit" />
+                    </button>
                   </Link>
 
-                  <button className="m-1" onClick={() => handleDelete(index)}>
-                    delete
+                  <button
+                    className="btn btn-outline-light m-1"
+                    onClick={() => handleDelete(index)}
+                  >
+                    <img className="app-logo" src={Delete} alt="Delete" />
                   </button>
                 </div>
               </div>

@@ -10,3 +10,6 @@
 .checked-item {
   text-decoration: line-through;
 }
+.app-logo {
+  width: 25pt;
+}
