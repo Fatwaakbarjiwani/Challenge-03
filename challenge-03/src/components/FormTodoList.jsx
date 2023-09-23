@@ -25,16 +25,14 @@ export default function FormTodoList({ dataJson, setdataJson, onPanggil }) {
   return (
     <div className="container w-75 justify-content-center">
       <div className="row justify-content-between">
-        <div className="col-sm-3">
-          <button
-            id="liveToastBtn"
-            type="button"
-            className="col-sm-12 text-bg-info text-light"
-            onClick={handleAll}
-          >
-            All
-          </button>
-        </div>
+        <button
+          id="liveToastBtn"
+          type="button"
+          className="col-sm-3 m-1 text-bg-info text-light"
+          onClick={handleAll}
+        >
+          All
+        </button>
 
         <button
           type="button"
